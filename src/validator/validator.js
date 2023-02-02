@@ -19,7 +19,8 @@ const validateEmail = (email) => {
 
 
 const validatePassword = (password) => {
-    return (/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,15}$/.test(password));
+    //return (/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,15}$/.test(password));
+    return (password.length>=8 && password.length<=15)
 }
 
 
